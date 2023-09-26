@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  min-height: 100%;
+}
+
+section{
+  height: 300px;
+  width: 100%;
+  border: 4px solid #000;
+}
+
+.a01 {
+  width: 100px;
+  height: 100px;
+  background: #f07;
+  position: relative;
+  animation: anim1 5s infinite;
+}
+
+@keyframes anim1 {
+  0%   {top: 0px; background: #f07; width: 100px;}
+  100% {top: 200px; background: #70f; width: 300px;}
+}
+
+.a02 {
+  width: 100px;
+  height: 100px;
+  background: #f07;
+  position: relative;
+  animation: anim2 5s infinite;
+}
+
+@keyframes anim2 {
+  0%   {top: 0px; left: 0px; background: #f07;}
+  25%  {top: 0px; left: 100px; background: #f70;}
+  50%  {top: 100px; left: 100px; background: #70f;}
+  75%  {top: 100px; left: 0px; background: #7f0;}
+  100% {top: 0px; left: 0px; background: #f07;}
+}
